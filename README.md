@@ -1,5 +1,7 @@
 # jekylldark
 
+[![Gem Version](https://badge.fury.io/rb/jekylldark.svg)](https://badge.fury.io/rb/jekylldark)
+
 ## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
