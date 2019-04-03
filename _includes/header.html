@@ -1,0 +1,23 @@
+<header class="site-header">
+  <nav class="site-nav" id="navbar">
+    {% assign links = site.data.navigation %}
+    {% for link in links %}
+      {% assign class = nil %}
+      {% if page.url contains link.url %}
+        {% assign class = 'active' %}
+      {% endif %}
+      {% if link.sublinks %}
+        <div class="dropdown">
+          <a href="{{ site.baseurl }}{{ link.url }}" class="dropdown-button">{{ link.title }}</a>
+          <div class="dropdown-list">
+            {% for sublink in link.sublinks %}
+              <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      {% else %}
+        <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+</header>
