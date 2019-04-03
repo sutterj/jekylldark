@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+$base-font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !default;
+$base-font-size: 20px !default;
+$base-line-height: 1.75 !default;
+$base-text-color: #FFFF !default;
+$background-color: #4C4C4C !default;
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $base-text-color;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 30px;
+  padding: 20px;
+}
+
+.site-nav {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.site-nav a {
+  color: #f2f2f2;
+  display: block;
+  float: left;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.site-nav a:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown:hover .dropdown-list {
+  display: block;
+}
+
+.dropdown-button {
+  color: #f2f2f2;
+  display: block;
+  float: left;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dropdown-list {
+  background-color: #f9f9f9;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-list a {
+  color: black;
+  display: block;
+  float: none;
+  padding: 14px 16px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.dropdown-list a:hover {
+  background-color: #ddd;
+  color: black;
+}
