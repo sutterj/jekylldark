@@ -1,0 +1,17 @@
+- title: Home
+  url: /index.html
+- title: About
+  url: /team.html
+- title: Contact
+  url: /contact.html
+- title: Support
+  url: /support.html
+  sublinks:
+    - title: Support
+      url: /support.html
+    - title: FAQ
+      url: /faq.html
+    - title: Documentation
+      url: /documentation.html
+    - title: Customer Support
+      url: /customer-support.html
