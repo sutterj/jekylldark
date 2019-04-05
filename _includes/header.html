@@ -1,23 +1,23 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+{% assign navs = site.data.navigation %}
 <header>
   <nav class="site-nav" id="navbar">
-    {% assign links = site.data.navigation %}
-    {% for link in links %}
+    {% for nav in navs %}
       {% assign class = nil %}
-      {% if page.url contains link.url %}
+      {% if page.url contains nav.url %}
         {% assign class = 'active' %}
       {% endif %}
-      {% if link.sublinks %}
+      {% if nav.subnavs %}
         <div class="dropdown" id="navdrop">
-          <a href="{{ site.baseurl }}{{ link.url }}" class="dropdown-button">{{ link.title }}</a>
+          <a href="{{ site.baseurl }}{{ nav.url }}" class="dropdown-button">{{ nav.title }}</a>
           <div class="dropdown-list">
-            {% for sublink in link.sublinks %}
-              <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+            {% for subnav in nav.subnavs %}
+              <a href="{{ site.baseurl }}{{ subnav.url }}">{{ subnav.title }}</a>
             {% endfor %}
           </div>
         </div>
       {% else %}
-        <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+        <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.title }}</a>
       {% endif %}
     {% endfor %}
     <a href="javascript:void(0);" class="icon" onclick="expandNav()">
