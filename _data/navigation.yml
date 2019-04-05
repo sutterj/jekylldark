@@ -1,12 +1,12 @@
 - title: Home
   url: /index.html
 - title: About
-  url: /team.html
+  url: /about.html
 - title: Contact
   url: /contact.html
 - title: Support
   url: /support.html
-  sublinks:
+  subnavs:
     - title: Support
       url: /support.html
     - title: FAQ
