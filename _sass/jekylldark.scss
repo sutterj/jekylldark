@@ -6,18 +6,21 @@ $base-line-height: 1.75 !default;
 $base-text-color: #FFFF !default;
 $background-color: #4C4C4C !default;
 
-body {
+body.site {
+  background-color: $background-color;
+  color: $base-text-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
+  height: 100vw;
   line-height: $base-line-height;
-  color: $base-text-color;
-  background-color: $background-color;
   margin: 0;
+  overflow: hidden;
   padding: 0;
+  width: 100vw;
 }
 
-main {
-  margin: 30px;
+.site-content {
+  margin: 20px;
   padding: 20px;
 }
 
