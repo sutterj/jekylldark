@@ -1,31 +1,36 @@
 @charset "utf-8";
 
+$background-color: #4C4C4C !default;
 $base-font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !default;
 $base-font-size: 20px !default;
 $base-line-height: 1.75 !default;
 $base-text-color: #FFFF !default;
-$background-color: #4C4C4C !default;
 
 body.site {
   background-color: $background-color;
+  background-size: cover;
   color: $base-text-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
-  height: 100vw;
   line-height: $base-line-height;
+  height: auto !important;
   margin: 0;
-  overflow: hidden;
+  min-height: 100vh;
   padding: 0;
-  width: 100vw;
+  position: absolute;
 }
 
 .site-content {
-  margin: 20px;
+  background-color: #FFF2;
+  border-radius: 5px;
+  margin: 75px 30px 70px 30px;
   padding: 20px;
 }
 
 @import
   "components/layout",
   "components/navbar",
-  "components/footer"
+  "components/footer",
+  "components/navbar",
+  "components/sidebar";
 ;
