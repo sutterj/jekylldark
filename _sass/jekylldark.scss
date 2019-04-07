@@ -14,7 +14,7 @@ body.site {
   font-size: $base-font-size;
   line-height: $base-line-height;
   height: auto !important;
-  margin: 0;
+  margin: 10px 0 10px 0;
   min-height: 100vh;
   padding: 0;
   position: absolute;
@@ -23,14 +23,14 @@ body.site {
 .site-content {
   background-color: #FFF2;
   border-radius: 5px;
-  margin: 75px 30px 70px 30px;
+  margin: 65px 0 65px 30px;
   padding: 20px;
 }
 
 @import
+  "components/footer",
   "components/layout",
   "components/navbar",
-  "components/footer",
-  "components/navbar",
-  "components/sidebar";
+  "components/sidebar",
+  "components/textstyle"
 ;
