@@ -1,6 +1,17 @@
 .posts {
   background-color: #FFF2;
   border-radius: 5px;
-  margin: 75px 30px 70px 30px;
+  line-height: 0px;
+  margin: 65px 0px 65px 30px;
   padding: 20px;
+}
+
+.post-list {
+  margin: 30px 0 0 20px;
+  padding: 0 0 0 5px;
+}
+
+h6.post-header {
+  line-height: 30px;
+  margin: 0;
 }
