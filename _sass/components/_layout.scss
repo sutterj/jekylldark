@@ -37,7 +37,7 @@
 
 @media (min-width: 1000px) {
   .wrapper {
-    grid-template-columns: 500px 300px 200px;
+    grid-template-columns: 400px 275px 325px;
     grid-template-rows: auto;
     grid-template-areas:
       "header  header  header"
@@ -60,6 +60,15 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .site-sidebar {
+    margin: 0 0 0 0;
+  }
+  .site-content {
+    margin-right: 30px;
+  }
+  .posts {
+    margin: 0 30px 65px 30px !important;
+  }
   .site-nav.responsive {
     width: 100vw;
   }
