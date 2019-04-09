@@ -25,24 +25,24 @@
 
 @media (min-width: 1000px) {
   .wrapper {
-    grid-template-columns: 1000px;
-    grid-template-rows: auto;
     grid-template-areas:
       "header"
       "content"
       "sidebar"
       "footer";
+    grid-template-columns: 1000px;
+    grid-template-rows: auto;
   }
 }
 
 @media (min-width: 1000px) {
   .wrapper {
-    grid-template-columns: 400px 275px 325px;
-    grid-template-rows: auto;
     grid-template-areas:
       "header  header  header"
       "content content sidebar"
       "footer  footer  footer";
+    grid-template-columns: 400px 275px 325px;
+    grid-template-rows: auto;
    }
 }
 
