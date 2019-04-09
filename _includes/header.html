@@ -2,10 +2,6 @@
 {% assign navs = site.data.navigation %}
 <nav class="site-nav" id="navbar">
   {% for nav in navs %}
-    {% assign class = nil %}
-    {% if page.url contains nav.url %}
-      {% assign class = 'active' %}
-    {% endif %}
     {% if nav.subnavs %}
       <div class="dropdown" id="navdrop">
         <a href="{{ site.baseurl }}{{ nav.url }}" class="dropdown-button">{{ nav.title }}</a>
