@@ -1,0 +1,43 @@
+language: ruby
+rvm:
+  - 2.4.1
+
+before_install:
+  - gem update --system
+  - gem install bundler
+  - pyenv global 3.6.3
+  - pip install --upgrade pip
+  - pip install proselint
+  - pip install pipenv
+
+install:
+  - bundle install
+  - npm install -g htmlhint csslint
+
+script:
+  - mdl README.md
+  - mdl _posts
+  - proselint README.md
+  - proselint _posts
+  - jekyll build
+  - htmlproofer ./_site
+  - htmlhint ./_site
+  - csslint ./_site
+
+env:
+  global:
+    - PIPENV_VENV_IN_PROJECT=1
+    - PIPENV_IGNORE_VIRTUALENVS=1
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+addons:
+  apt:
+    packages:
+      - libcurl4-openssl-dev
+
+sudo: false
+
+cache: bundler
+
+notifications:
+  email: false

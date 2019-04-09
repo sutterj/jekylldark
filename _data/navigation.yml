@@ -1,19 +1,19 @@
 - title: Home
   url: /
 - title: About
-  url: /about
+  url: /
 - title: Posts
-  url: /posts
+  url: /
 - title: Contact
-  url: /contact
+  url: /
 - title: Support
-  url: /support
+  url: /
   subnavs:
     - title: Support
-      url: /support
+      url: /
     - title: FAQ
-      url: /faq
+      url: /
     - title: Documentation
-      url: /documentation
+      url: /
     - title: Customer Support
-      url: /customer-support
+      url: /

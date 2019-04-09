@@ -1,8 +1,8 @@
 .posts {
   background-color: #FFF2;
   border-radius: 5px;
-  line-height: 0px;
-  margin: 65px 0px 65px 30px;
+  line-height: 0;
+  margin: 65px 0 65px 30px;
   padding: 20px;
 }
 
@@ -11,7 +11,7 @@
   padding: 0 0 0 5px;
 }
 
-h6.post-header {
+.post-header {
   line-height: 30px;
   margin: 0;
 }
