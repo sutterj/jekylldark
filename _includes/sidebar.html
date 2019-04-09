@@ -1,19 +1,31 @@
 {% assign sidebardata = site.data.sidebar %}
 {%- assign date_format = "%b %-d, %Y" -%}
-<div class="posts">
-  <h4>{{ sidebardata.header }}</h4>
-  {%- if site.posts.size > 0 -%}
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        <h6 class="post-header">
-          {{ post.date | date: date_format }}:
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title }}
-          </a>
-        </h6>
-      </li>
-      {%- endfor -%}
-    </ul>
-  {%- endif -%}
+<div class="sidebar-content">
+  {% for sidebaritem in sidebardata %}
+    {% if sidebaritem.header == "Posts" %}
+      <div class="post-area">
+        <h4>{{ sidebaritem.header }}</h4>
+        {%- if site.posts.size > 0 -%}
+          <ul class="post-list">
+            {%- for post in site.posts -%}
+            <li>
+              <h6 class="post-header">
+                {{ post.date | date: date_format }}:
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                  {{ post.title }}
+                </a>
+              </h6>
+            </li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+      </div>
+      <br>
+    {% else %}
+      <div class="sidebar-item">
+        <h4>{{ sidebaritem.header }}</h4>
+      </div>
+      <br>
+    {% endif %}
+  {% endfor %}
 </div>
