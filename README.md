@@ -1,6 +1,7 @@
 # jekylldark
 
 [![Gem Version](https://badge.fury.io/rb/jekylldark.svg)](https://badge.fury.io/rb/jekylldark)
+[![Build Status](https://travis-ci.com/sutterj/jekylldark.svg?branch=master)](https://travis-ci.com/sutterj/jekylldark)
 
 ## Installation
 
