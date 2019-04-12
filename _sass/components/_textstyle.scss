@@ -21,3 +21,15 @@ h5 {
 h6 {
   font-size: 0.75em;
 }
+
+a.text-link:link {
+  color: #ffffff;
+}
+
+a.text-link:hover {
+  color: #000000;
+}
+
+a.text-link:visited {
+  text-decoration: none;
+}

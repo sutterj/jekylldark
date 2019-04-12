@@ -1,19 +1,57 @@
 {% assign sidebardata = site.data.sidebar %}
 {%- assign date_format = "%b %-d, %Y" -%}
-<div class="posts">
-  <h4>{{ sidebardata.header }}</h4>
-  {%- if site.posts.size > 0 -%}
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        <h6 class="post-header">
-          {{ post.date | date: date_format }}:
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title }}
-          </a>
-        </h6>
-      </li>
-      {%- endfor -%}
-    </ul>
-  {%- endif -%}
+<div class="site-title">
+  <h1>{{ site.title }}</h1>
+  <div class="sidebar-area">
+    {{ site.description }}
+  </div>
+</div>
+<div class="sidebar-content">
+  {% for sidebaritem in sidebardata %}
+    {% if sidebaritem.header == "Posts" %}
+      <div class="sidebar-area">
+        <h4>{{ sidebaritem.header }}</h4>
+        {%- if site.posts.size > 0 -%}
+          <ul class="sidebar-list">
+            {%- for post in site.posts -%}
+              <li>
+                <h6 class="sidebar-header">
+                  {{ post.date | date: date_format }}: <a class="text-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                </h6>
+              </li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+      </div>
+      <br>
+    {% elsif sidebaritem.header == "Featured Projects" %}
+      <div class="sidebar-area">
+        <h4>{{ sidebaritem.header }}</h4>
+        <ul class="sidebar-list">
+          {%- for project in sidebaritem.projects -%}
+            <li>
+              <h6 class="sidebar-header">
+                <a class="text-link" href="{{ project.url }}" target="_blank">{{ project.name }}</a>
+              </h6>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+      <br>
+    {% else %}
+      <div class="sidebar-area">
+        <h4>{{ sidebaritem.header }}</h4>
+        <ul class="sidebar-list">
+          {%- for content in sidebaritem.content -%}
+            <li>
+              <h6 class="sidebar-header">
+                {{ content.name }}
+              </h6>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+      <br>
+    {% endif %}
+  {% endfor %}
 </div>

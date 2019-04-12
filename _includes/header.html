@@ -2,18 +2,14 @@
 {% assign navs = site.data.navigation %}
 <nav class="site-nav" id="navbar">
   {% for nav in navs %}
-    {% assign class = nil %}
-    {% if page.url contains nav.url %}
-      {% assign class = 'active' %}
-    {% endif %}
     {% if nav.subnavs %}
       <div class="dropdown" id="navdrop">
-        <a href="{{ site.baseurl }}{{ nav.url }}" class="dropdown-button">{{ nav.title }}</a>
         <div class="dropdown-list" id="navlist">
           {% for subnav in nav.subnavs %}
             <a href="{{ site.baseurl }}{{ subnav.url }}">{{ subnav.title }}</a>
           {% endfor %}
         </div>
+        <a href="{{ site.baseurl }}{{ nav.url }}" class="dropdown-button">{{ nav.title }}</a>
       </div>
     {% else %}
       <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.title }}</a>
@@ -23,25 +19,4 @@
     <i class="fas fa-bars"></i>
   </a>
 </nav>
-<script type="text/javascript">
-  function expandNav() {
-    var x = document.getElementById("navbar");
-    var y = document.getElementById("navdrop");
-    var z = document.getElementById("navlist");
-    if (x.className === "site-nav") {
-      x.className += " responsive";
-    } else {
-      x.className = "site-nav";
-    }
-    if (y.className === "dropdown") {
-      y.className += " responsive";
-    } else {
-      y.className = "dropdown";
-    }
-    if (z.className === "dropdown-list") {
-      z.className += " responsive";
-    } else {
-      z.className = "dropdown-list";
-    }
-  }
-</script>
+<script src="/assets/js/expandNav.js" charset="utf-8"></script>

@@ -1,7 +1,6 @@
 {
   "ignore": [
-    "adjoining-classes",
-    "known-properties"
+    "adjoining-classes"
   ],
   "warnings": [
     "important"
@@ -24,6 +23,7 @@
     "ids",
     "import",
     "import-ie-limit",
+    "known-properties",
     "order-alphabetical",
     "outline-none",
     "overqualified-elements",
