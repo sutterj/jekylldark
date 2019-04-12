@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    {% if jekyll.environment == 'production' %}
+      {% include analytics.html %}
+    {% endif %}
     {% include head.html %}
     <title>{{ page.title }}</title>
   </head>
