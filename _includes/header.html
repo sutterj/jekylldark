@@ -4,12 +4,12 @@
   {% for nav in navs %}
     {% if nav.subnavs %}
       <div class="dropdown" id="navdrop">
-        <a href="{{ site.baseurl }}{{ nav.url }}" class="dropdown-button">{{ nav.title }}</a>
         <div class="dropdown-list" id="navlist">
           {% for subnav in nav.subnavs %}
             <a href="{{ site.baseurl }}{{ subnav.url }}">{{ subnav.title }}</a>
           {% endfor %}
         </div>
+        <a href="{{ site.baseurl }}{{ nav.url }}" class="dropdown-button">{{ nav.title }}</a>
       </div>
     {% else %}
       <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.title }}</a>
