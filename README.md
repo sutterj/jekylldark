@@ -34,7 +34,8 @@ Or install it yourself as:
 Features:
 
 - Responsive layout
-- Navbar
+- Navbar with subnav dropdown
+- Sidebar featuring title description, projects, posts, and any other text content
 
 ## Contributing
 
