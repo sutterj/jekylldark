@@ -7,7 +7,6 @@ before_install:
 - pyenv global 3.6.3
 - pip install --upgrade pip
 - pip install proselint
-- pip install pipenv
 install:
 - bundle install
 - npm install -g htmlhint csslint
@@ -22,8 +21,6 @@ script:
 - csslint ./_site
 env:
   global:
-  - PIPENV_VENV_IN_PROJECT=1
-  - PIPENV_IGNORE_VIRTUALENVS=1
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 addons:
   apt:
@@ -35,7 +32,6 @@ notifications:
   email: false
 deploy:
   provider: rubygems
-  api_key: 3aebeae35d260986cf3040547d02ea9a
   gem: jekylldark
   on:
     repo: sutterj/jekylldark
