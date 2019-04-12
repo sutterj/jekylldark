@@ -1,4 +1,6 @@
 title: jekylldark
+description: >-
+  A dark theme for jekyll.
 
 exclude:
   - /*.gem
