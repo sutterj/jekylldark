@@ -1,43 +1,42 @@
 language: ruby
 rvm:
-  - 2.4.1
-
+- 2.4.1
 before_install:
-  - gem update --system
-  - gem install bundler
-  - pyenv global 3.6.3
-  - pip install --upgrade pip
-  - pip install proselint
-  - pip install pipenv
-
+- gem update --system
+- gem install bundler
+- pyenv global 3.6.3
+- pip install --upgrade pip
+- pip install proselint
+- pip install pipenv
 install:
-  - bundle install
-  - npm install -g htmlhint csslint
-
+- bundle install
+- npm install -g htmlhint csslint
 script:
-  - mdl README.md
-  - mdl _posts
-  - proselint README.md
-  - proselint _posts
-  - jekyll build
-  - htmlproofer ./_site
-  - htmlhint ./_site
-  - csslint ./_site
-
+- mdl README.md
+- mdl _posts
+- proselint README.md
+- proselint _posts
+- jekyll build
+- htmlproofer ./_site
+- htmlhint ./_site
+- csslint ./_site
 env:
   global:
-    - PIPENV_VENV_IN_PROJECT=1
-    - PIPENV_IGNORE_VIRTUALENVS=1
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-
+  - PIPENV_VENV_IN_PROJECT=1
+  - PIPENV_IGNORE_VIRTUALENVS=1
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 addons:
   apt:
     packages:
-      - libcurl4-openssl-dev
-
+    - libcurl4-openssl-dev
 sudo: false
-
 cache: bundler
-
 notifications:
   email: false
+deploy:
+  provider: rubygems
+  api_key:
+    secure: iJIvaYKaCIIABLuBPY/CsbeUyLCGlPQG5CAX8XTG0oxbz4GSNXrWDLKZhuq0hPnkPJ3GOfIloC0I5PjG1gRkCYSM96fzlxZ2lsUmLQ7HKRYmolHKYr88gPVA1ibSOa+/r8XYneheCuX2jpzuUdYPSM4BQrB7TRQn7SLYBqrNyfLuHEo6NxolZz61lXqZtRsFSMCkN4I0+Zy2JThfIq4XguOTLzPyy2B82BGhxq/sq9NNL8954NKR6tTcbitOCxOwOS330JVPOz/JW3jwZkSmUU1IBTjKTXuBSlMnSJ3BzeeedAELAd0U46mzXnmqxR3A725Wi9WFajgWIuPEXvGwoYrumgydoCNitouNgDDcTfxVSK/E2ndRi9U1g92K/vtKuloXE+/AEhKlEr3ytL2chKS0emVChvgl6avb73vqV2iD6+a59aAu+1Nr6NOsUsrqYV48fCQB0TA1aZDtz7ZtUyDK9LmfUkiGKR6AAuWfsAZyQuzfsrpqs+aQfnmxA6zyMO4BJbjOFUSY7sjV5hyd9vXA2r4XuDs1EVCwj748ibZHoPoye220WFhLRQjX0hk8pDQQaAzTKolL9j43iY7ZoTmc7u2WXE+1g66ElGPMA/xuTaqJj/mAS8c+76zbKniiFvo+IwZprzh9uBaAIp/lzIpB2xEyW9wtm3J97pgv1Rw=
+  gem: jekylldark
+  on:
+    repo: sutterj/jekylldark
