@@ -1,10 +1,10 @@
 @charset "utf-8";
 
-$background-color: #4C4C4C !default;
+$background-color: #4c4c4c !default;
 $base-font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !default;
 $base-font-size: 20px !default;
 $base-line-height: 1.75 !default;
-$base-text-color: #FFFF !default;
+$base-text-color: #ffffff !default;
 
 .site {
   background-color: $background-color;
@@ -12,7 +12,6 @@ $base-text-color: #FFFF !default;
   color: $base-text-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
-  height: auto !important;
   line-height: $base-line-height;
   margin: 10px 0 10px 0;
   min-height: 100vh;
@@ -21,7 +20,7 @@ $base-text-color: #FFFF !default;
 }
 
 .site-content {
-  background-color: #FFF2;
+  background-color: #696969;
   border-radius: 5px;
   margin: 84px 0 84px 30px;
   padding: 40px;
