@@ -2,6 +2,9 @@
 {%- assign date_format = "%b %-d, %Y" -%}
 <div class="site-title">
   <h1>{{ site.title }}</h1>
+  <div class="sidebar-area">
+    {{ site.description }}
+  </div>
 </div>
 <div class="sidebar-content">
   {% for sidebaritem in sidebardata %}
@@ -13,7 +16,7 @@
             {%- for post in site.posts -%}
               <li>
                 <h6 class="sidebar-header">
-                  {{ post.date | date: date_format }}: <a class="sidebar-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                  {{ post.date | date: date_format }}: <a class="text-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
                 </h6>
               </li>
             {%- endfor -%}
@@ -28,7 +31,7 @@
           {%- for project in sidebaritem.projects -%}
             <li>
               <h6 class="sidebar-header">
-                <a class="sidebar-link" href="{{ project.url }}" target="_blank">{{ project.name }}</a>
+                <a class="text-link" href="{{ project.url }}" target="_blank">{{ project.name }}</a>
               </h6>
             </li>
           {%- endfor -%}
