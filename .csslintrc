@@ -1,6 +1,6 @@
 {
   "ignore": [
-    "adjoining-classes",
+    "adjoining-classes"
   ],
   "warnings": [
     "important"
