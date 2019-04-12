@@ -32,6 +32,7 @@ notifications:
   email: false
 deploy:
   provider: rubygems
+  api_key: $RUBYGEMAPIKEY
   gem: jekylldark
   on:
     repo: sutterj/jekylldark
