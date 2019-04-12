@@ -63,12 +63,12 @@
   .site-sidebar {
     margin-right: 30px;
   }
+  .sidebar-content {
+    margin-bottom: 0 !important;
+  }
   .site-content {
     margin-right: 30px;
     margin-top: 30px;
-  }
-  .posts {
-    margin: 0 30px 65px 30px !important;
   }
   .site-nav.responsive {
     width: 100vw;
@@ -92,8 +92,5 @@
   }
   .site-footer {
     left: 0;
-  }
-  .dropdown-list.responsive a:first-child {
-    display: none;
   }
 }
