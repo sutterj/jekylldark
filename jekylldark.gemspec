@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekylldark"
-  spec.version       = "0.1.17"
+  spec.version       = "0.1.18"
   spec.authors       = ["sutterj"]
   spec.email         = ["sutterj@allegheny.edu"]
 
