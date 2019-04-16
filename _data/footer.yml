@@ -1,1 +1,9 @@
-header: Name
+- header: Name
+- header: Connect
+  social:
+    - title: GitHub
+      url: https://github.com/sutterj
+      image: https://github.githubassets.com/favicon.ico
+    - title: GitHub
+      url: https://github.com/sutterj
+      image: https://github.githubassets.com/favicon.ico
