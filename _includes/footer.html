@@ -1,4 +1,11 @@
 {% assign footerdata = site.data.footer %}
-<div class="content">
-  {{ footerdata.header }}
+<div class="footer-content">
+  {% for footeritem in footerdata %}
+    {% if footeritem.header == "Connect" %}
+      <h4>{{ footeritem.header }}</h4>
+      {%- for connect in footeritem.social -%}
+        <img src="{{ connect.image }}" alt=""><a class="text-link" href="{{ connect.url }}">{{ connect.title }}</a>
+      {%- endfor -%}
+    {% endif %}
+  {% endfor %}
 </div>
