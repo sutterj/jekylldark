@@ -6,7 +6,7 @@
         {% if footeritem.header == "Connect" %}
           <h4>{{ footeritem.header }}</h4>
           {%- for connect in footeritem.social -%}
-            <img src="{{ connect.image }}" alt=""><a class="text-link" href="{{ connect.url }}">{{ connect.title }}</a>
+            <img src="{{ connect.image }}" alt="{{ connect.title }} icon"><a class="text-link" href="{{ connect.url }}">{{ connect.title }}</a>
           {%- endfor -%}
         {% endif %}
       </div>
