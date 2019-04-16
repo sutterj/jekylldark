@@ -2,13 +2,13 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekylldark"
-  spec.version       = "0.1.18"
+  spec.version       = "0.1.19"
   spec.authors       = ["sutterj"]
   spec.email         = ["sutterj@allegheny.edu"]
 
   spec.summary       = "A dark theme for Jekyll.  UNFINISHED: IN DEVELOPMENT"
   spec.homepage      = "https://github.com/sutterj/jekylldark"
-  spec.license       = "MIT"
+  spec.license       = "GPL-3.0-or-later"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
 
