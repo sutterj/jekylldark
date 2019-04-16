@@ -1,11 +1,11 @@
 footer {
   background-color: #333333;
-  bottom: 0;
+  bottom: -1;
   position: absolute;
   width: 100vw;
 }
 
-footer .content {
+.footer-content {
   margin: 5px;
   padding: 5px;
 }
