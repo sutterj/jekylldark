@@ -62,4 +62,4 @@ theme-gem, please edit the regexp in `jekylldark.gemspec` accordingly.
 ## License
 
 The theme is available as open source under the terms of the
-[MIT License](https://opensource.org/licenses/MIT).
+[GNU General Public License](https://opensource.org/licenses/GPL-3.0).
