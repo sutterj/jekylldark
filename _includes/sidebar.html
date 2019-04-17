@@ -31,7 +31,7 @@
           {%- for project in sidebaritem.projects -%}
             <li>
               <h6 class="sidebar-header">
-                <a class="text-link" href="{{ project.url }}" target="_blank">{{ project.name }}</a>
+                <a class="text-link" href="{{ project.url }}" rel="noopener" target="_blank">{{ project.name }}</a>
               </h6>
             </li>
           {%- endfor -%}
