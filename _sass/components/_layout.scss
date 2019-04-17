@@ -89,7 +89,7 @@
   .site-nav a:not(:first-child) {
     display: none;
   }
-  .site-nav a.icon {
+  .site-nav a.navbar-hamburger {
     display: block;
     float: right;
   }
@@ -109,7 +109,7 @@
   .site-nav.responsive {
     width: 100vw;
   }
-  .site-nav.responsive a.icon {
+  .site-nav.responsive a.navbar-hamburger {
     position: absolute;
     right: 0;
     top: 0;
