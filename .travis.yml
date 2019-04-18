@@ -1,31 +1,31 @@
 language: ruby
 rvm:
-- 2.6.2
+  - 2.6.2
 before_install:
-- gem update --system
-- gem install bundler
-- pyenv global 3.6.3
-- pip install --upgrade pip
+  - gem update --system
+  - gem install bundler
+  - pyenv global 3.6.3
+  - pip install --upgrade pip
 install:
-- bundle install
-- pip install proselint
-- npm install -g htmlhint csslint
+  - bundle install
+  - pip install proselint
+  - npm install -g htmlhint csslint
 script:
-- mdl README.md
-- mdl _posts
-- proselint README.md
-- proselint _posts
-- jekyll build
-- htmlproofer ./_site
-- htmlhint ./_site
-- csslint ./_site
+  - mdl README.md
+  - mdl _posts
+  - proselint README.md
+  - proselint _posts
+  - jekyll build
+  - htmlproofer --http-status-ignore "999" ./_site
+  - htmlhint ./_site
+  - csslint ./_site
 env:
   global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 addons:
   apt:
     packages:
-    - libcurl4-openssl-dev
+      - libcurl4-openssl-dev
 sudo: false
 cache: bundler
 notifications:

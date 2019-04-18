@@ -1,4 +1,4 @@
-.site-footer {
+.site-header {
   grid-area: header;
 }
 
@@ -14,43 +14,88 @@
   grid-area: footer;
 }
 
-.wrapper {
+.footer-area1 {
+  grid-area: footer1;
+}
+
+.footer-area2 {
+  grid-area: footer2;
+}
+
+.footer-area3 {
+  grid-area: footer3;
+}
+
+.footer-area4 {
+  grid-area: footer4;
+}
+
+.site-wrapper {
   display: grid;
   grid-template-areas:
     "header"
     "sidebar"
     "content"
     "footer";
+  justify-content: center;
 }
 
-@media (min-width: 1000px) {
-  .wrapper {
+.footer-wrapper {
+  display: grid;
+  grid-template-areas:
+    "footer1"
+    "footer2"
+    "footer3"
+    "footer4";
+  justify-content: flex-start;
+}
+
+@media (min-width: 800px) {
+  .site-wrapper {
     grid-template-areas:
       "header"
       "sidebar"
       "content"
       "footer";
-    grid-template-columns: 1000px;
+    grid-template-columns: 800px;
+    grid-template-rows: auto;
+  }
+  .footer-wrapper {
+    display: grid;
+    grid-template-areas:
+      "footer1"
+      "footer2"
+      "footer3"
+      "footer4";
+    grid-template-columns: auto;
     grid-template-rows: auto;
   }
 }
 
-@media (min-width: 1000px) {
-  .wrapper {
+@media (min-width: 800px) {
+  .site-wrapper {
     grid-template-areas:
       "header  header  header"
       "content content sidebar"
       "footer  footer  footer";
-    grid-template-columns: 400px 275px 325px;
+    grid-template-columns: auto;
     grid-template-rows: auto;
    }
+  .footer-wrapper {
+    display: grid;
+    grid-template-areas:
+      "footer1 footer2 footer3"
+      "footer4 footer4 footer4";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 799px) {
   .site-nav a:not(:first-child) {
     display: none;
   }
-  .site-nav a.icon {
+  .site-nav a.navbar-hamburger {
     display: block;
     float: right;
   }
@@ -59,10 +104,7 @@
   }
 }
 
-@media screen and (max-width: 999px) {
-  .site-sidebar {
-    margin-right: 30px;
-  }
+@media screen and (max-width: 799px) {
   .sidebar-content {
     margin-bottom: 0 !important;
   }
@@ -73,7 +115,7 @@
   .site-nav.responsive {
     width: 100vw;
   }
-  .site-nav.responsive a.icon {
+  .site-nav.responsive a.navbar-hamburger {
     position: absolute;
     right: 0;
     top: 0;

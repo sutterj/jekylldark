@@ -1,6 +1,10 @@
 title: jekylldark
-description: >-
-  A dark theme for jekyll.
+title-description: A dark theme for jekyll.
+full-description: >
+  A dark theme for jekyll with responsive layout
+  that features a navbar, sidebar, footer, content
+  area, and posts with customizable text through
+  YML files.
 
 exclude:
   - /*.gem
@@ -13,4 +17,4 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - README.md
-  - LICENSE.txt
+  - LICENSE
