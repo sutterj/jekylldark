@@ -1,27 +1,53 @@
 {% assign footerdata = site.data.footer %}
+{% assign navs = site.data.navigation %}
 <div class="footer-content">
   <div class="footer-wrapper">
     {% for footeritem in footerdata %}
       {% if footeritem.header == "Connect" %}
         <div class="footer-area">
           <div class="footer-area2">
-            <h5>{{ footeritem.header }}</h5>
+            <div class="footer-header">
+              {{ footeritem.header }}
+            </div>
             <ul class="footer-list">
               {%- for connect in footeritem.social -%}
                 <li>
-                  <img class="connect-img" src="{{ connect.image }}" alt="{{ connect.title }} icon"><a class="text-link" href="{{ connect.url }}">{{ connect.title }}</a>
+                  <img class="connect-img" src="{{ connect.image }}" alt="{{ connect.title }} icon"><a class="footer-link" href="{{ connect.url }}">{{ connect.title }}</a>
                 </li>
               {%- endfor -%}
             </ul>
           </div>
         </div>
-      {% else %}
+      {% elsif footeritem.header == "Title" %}
         <div class="footer-area">
           <div class="footer-area1">
-            <h5>{{ footeritem.header }}</h5>
+            <div class="footer-header">
+              {{ site.title }}
+            </div>
+            <p class="footer-paragraph">{{ site.full-description }}</p>
+          </div>
+        </div>
+      {% else %}
+        <div class="footer-area">
+          <div class="footer-area3">
+            <div class="footer-header">
+              {{ footeritem.header }}
+            </div>
+            <p class="footer-paragraph">{{ footeritem.content }}</p>
           </div>
         </div>
       {% endif %}
     {% endfor %}
+    <div class="footer-area4">
+      {% for nav in navs %}
+        {% if nav.subnavs %}
+          {% for subnav in nav.subnavs %}
+            <a class="footer-link" href="{{ site.baseurl }}{{ subnav.url }}">{{ subnav.title }}</a>
+          {% endfor %}
+        {% else %}
+          <a class="footer-link" href="{{ site.baseurl }}{{ nav.url }}">{{ nav.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 </div>
