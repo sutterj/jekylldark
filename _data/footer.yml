@@ -1,9 +1,11 @@
+- header: Title
 - header: Name
+  content: Content
 - header: Connect
   social:
     - title: GitHub
       url: https://github.com/sutterj
       image: https://github.githubassets.com/favicon.ico
-    - title: GitHub
-      url: https://github.com/sutterj
-      image: https://github.githubassets.com/favicon.ico
+    - title: LinkedIn
+      url: https://www.linkedin.com/in/jacob-s-15477896/
+      image: https://www.linkedin.com/favicon.ico
