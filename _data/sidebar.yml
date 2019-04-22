@@ -5,4 +5,4 @@
 - header: Posts
 - header: Content
   content:
-    - name: Content
+    - item: Content
