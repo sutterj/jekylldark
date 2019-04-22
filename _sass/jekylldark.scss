@@ -2,7 +2,7 @@
 
 $background-color: #4c4c4c !default;
 $base-font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !default;
-$base-font-size: 20px !default;
+$base-font-size: 17px !default;
 $base-line-height: 1.75 !default;
 $base-text-color: #ffffff !default;
 
@@ -10,6 +10,7 @@ $base-text-color: #ffffff !default;
   background-color: $background-color;
   background-size: cover;
   color: $base-text-color;
+  font-display: auto;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
@@ -27,9 +28,9 @@ $base-text-color: #ffffff !default;
 }
 
 @import
+  "components/elementstyle",
   "components/footer",
   "components/layout",
   "components/navbar",
-  "components/sidebar",
-  "components/textstyle"
+  "components/sidebar"
 ;
