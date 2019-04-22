@@ -8,6 +8,7 @@
 
 .site-content {
   grid-area: content;
+  max-width: 800px;
 }
 
 .site-footer {
@@ -111,6 +112,7 @@
   .site-content {
     margin-right: 30px;
     margin-top: 30px;
+    max-width: 100vw;
   }
   .site-nav.responsive {
     width: 100vw;
