@@ -1,0 +1,104 @@
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.75em;
+}
+
+a.text-link:link {
+  color: #ffffff;
+}
+
+a.text-link:hover {
+  color: #000000;
+}
+
+a.text-link:visited {
+  color: #ffffff;
+}
+
+a.text-link:visited:hover {
+  color: #000000;
+}
+
+table.plain {
+  background-color: #333333;
+  border-collapse: collapse;
+  border-color: #000000;
+  border-style: solid;
+  border-width: 4px;
+  text-align: center;
+  margin: 0;
+  tr {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+  }
+  th {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 4px 2px 4px 2px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  td {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+  }
+}
+
+table.alternating {
+  background-color: #333333;
+  border-collapse: collapse;
+  border-color: #000000;
+  border-style: solid;
+  border-width: 4px;
+  text-align: center;
+  margin: 0;
+  tr {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+  }
+  tr:nth-child(even) td {
+    background: #4c4c4c;
+  }
+  th {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 4px 2px 4px 2px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  td {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+  }
+}
+
+img.border {
+  border: 10px solid #999999;
+}
