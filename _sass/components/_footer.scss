@@ -35,18 +35,24 @@ footer {
 
 .footer-link {
   font-size: 0.75em;
+  padding: 0 5px 0 0;
 }
 
 a.footer-link:link {
-  color: #ffffff;
+  color: #bababa;
+  text-decoration: none;
 }
 
 a.footer-link:hover {
-  color: #000000;
+  color: #ffffff;
 }
 
 a.footer-link:visited {
-  text-decoration: none;
+  color: #bababa;
+}
+
+a.footer-link:visited:hover {
+  color: #ffffff;
 }
 
 .connect-img {
