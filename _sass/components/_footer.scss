@@ -1,6 +1,7 @@
 footer {
   background-color: #333333;
   bottom: -1;
+  left: 0;
   position: absolute;
   width: 100vw;
 }
@@ -10,13 +11,25 @@ footer {
 }
 
 .footer-area {
-  margin: 0 100px 40px 40px;
+  margin: 35px auto 0 40px;
+}
+
+.footer-area1 {
+  margin-right: 40px
+}
+
+.footer-area2 {
+  margin-right: 40px
+}
+
+.footer-area3 {
+  margin-right: 40px
 }
 
 .footer-area4 {
   align-content: center;
   font-size: 0.75em;
-  margin: 0 0 10px 0;
+  margin: 35px 0 10px 0;
   text-align: center;
   width: 100vw;
 }
@@ -28,9 +41,8 @@ footer {
 }
 
 .footer-header {
-  font-size: 1em;
   font-weight: bold;
-  margin: 35px 0 0 0;
+  margin: 0;
 }
 
 .footer-link {
@@ -62,6 +74,6 @@ a.footer-link:visited:hover {
 }
 
 .footer-paragraph {
-  font-size: 0.6em;
+  font-size: 0.75em;
   width: 150px;
 }
