@@ -4,6 +4,7 @@
 
 .site-sidebar {
   grid-area: sidebar;
+  max-width: 350px;
 }
 
 .site-content {
@@ -103,17 +104,30 @@
   .dropdown {
     display: none;
   }
-}
-
-@media screen and (max-width: 799px) {
+  .dropdown-list {
+    width: 100vw;
+  }
+  .site-sidebar {
+    margin-bottom: 0;
+    max-width: 100%;
+  }
   .sidebar-content {
     margin-bottom: 0 !important;
   }
   .site-content {
     margin-right: 30px;
     margin-top: 30px;
-    max-width: 100vw;
+    max-width: 100%;
   }
+  .site-footer {
+    left: 0;
+  }
+  .footer-paragraph {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 799px) {
   .site-nav.responsive {
     width: 100vw;
   }
@@ -130,11 +144,5 @@
   .dropdown.responsive {
     display: block;
     width: 100vw;
-  }
-  .dropdown-list {
-    width: 100vw;
-  }
-  .site-footer {
-    left: 0;
   }
 }
