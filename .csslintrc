@@ -1,6 +1,7 @@
 {
   "ignore": [
-    "adjoining-classes"
+    "adjoining-classes",
+    "font-sizes"
   ],
   "warnings": [
     "important"
@@ -18,7 +19,6 @@
     "fallback-colors",
     "floats",
     "font-faces",
-    "font-sizes",
     "gradients",
     "ids",
     "import",

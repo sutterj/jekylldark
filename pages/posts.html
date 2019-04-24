@@ -1,0 +1,15 @@
+---
+layout: page
+permalink: /posts/
+title: Posts
+---
+{%- assign date_format = "%b %-d, %Y" -%}
+<ul class="sidebar-list">
+  {%- for post in site.posts -%}
+    <li>
+      <h6 class="sidebar-header">
+        {{ post.date | date: date_format }}: <a class="text-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h6>
+    </li>
+  {%- endfor -%}
+</ul>

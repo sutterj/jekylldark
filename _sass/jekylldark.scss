@@ -2,9 +2,13 @@
 
 $background-color: #4c4c4c !default;
 $base-font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !default;
-$base-font-size: 20px !default;
+$base-font-size: 17px !default;
 $base-line-height: 1.75 !default;
 $base-text-color: #ffffff !default;
+
+.site-wrapper {
+  width: 100vw;
+}
 
 .site {
   background-color: $background-color;
@@ -22,14 +26,21 @@ $base-text-color: #ffffff !default;
 .site-content {
   background-color: #696969;
   border-radius: 5px;
-  margin: 84px 0 31px 30px;
-  padding: 40px;
+  margin: 76px 0 31px 30px;
+  padding: 20px 40px 40px 40px;
+}
+
+.page-header {
+  border-bottom-color: #4c4c4c;
+  border-bottom-style: solid;
+  margin: 0 0 50px 0;
+  padding: 0 0 12px 0;
 }
 
 @import
+  "components/elementstyle",
   "components/footer",
   "components/layout",
   "components/navbar",
-  "components/sidebar",
-  "components/textstyle"
+  "components/sidebar"
 ;

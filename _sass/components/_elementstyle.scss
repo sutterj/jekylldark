@@ -1,0 +1,131 @@
+h1 {
+  font-size: 2em;
+  text-shadow: 2px 2px #000000;
+}
+
+h2 {
+  font-size: 1.75em;
+  text-shadow: 2px 2px #000000;
+}
+
+h3 {
+  font-size: 1.5em;
+  text-shadow: 2px 2px #000000;
+}
+
+h4 {
+  font-size: 1.25em;
+  text-shadow: 2px 2px #000000;
+}
+
+h5 {
+  font-size: 1em;
+  text-shadow: 2px 2px #000000;
+}
+
+h6 {
+  font-size: 0.75em;
+}
+
+p {
+  padding: 10px 0 10px 0;
+}
+
+a.text-link:link {
+  color: #ffffff;
+}
+
+a.text-link:hover {
+  color: #000000;
+}
+
+a.text-link:visited {
+  color: #ffffff;
+}
+
+a.text-link:visited:hover {
+  color: #000000;
+}
+
+table {
+  background-color: #333333;
+  border-collapse: collapse;
+  border-color: #000000;
+  border-style: solid;
+  border-width: 4px;
+  margin: 0;
+  position: relative;
+  table-layout: fixed;
+  text-align: center;
+  tr {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+  }
+  th {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 4px 4px 4px 4px;
+    font-weight: bold;
+    padding:  5px;
+  }
+  td {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+  }
+}
+
+.wide-table {
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.alternating {
+  tr:nth-child(even) td {
+    background-color: #4c4c4c;
+  }
+}
+
+img {
+  max-width: 100%;
+  padding: 10px 0 10px 0;
+}
+
+.left {
+  float: left;
+  margin-right: 20px;
+}
+
+.right {
+  float: right;
+  margin-left: 20px;
+}
+
+.center {
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.small {
+  width: 200px;
+}
+
+.medium {
+  width: 350px;
+}
+
+.large {
+  width: 500px;
+}
+
+.full {
+  display: block;
+  float: none;
+  margin-left:auto;
+  margin-right:auto;
+  width: 100%;
+}

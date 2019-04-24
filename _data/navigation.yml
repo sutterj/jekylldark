@@ -1,18 +1,14 @@
 - title: Home
   url: /
-- title: About
-  url: /
+- title: Examples
+  url: /examples/
 - title: Posts
-  url: /
+  url: /posts/
 - title: Contact
   url: /
 - title: Support
   subnavs:
     - title: Support
-      url: /
-    - title: FAQ
-      url: /
+      url: https://github.com/sutterj/jekylldark/issues
     - title: Documentation
-      url: /
-    - title: Customer Support
-      url: /
+      url: https://github.com/sutterj/jekylldark
