@@ -1,3 +1,4 @@
+# Site settings
 title: jekylldark
 title-description: A dark theme for jekyll.
 full-description: >
@@ -6,6 +7,13 @@ full-description: >
   area, and posts with customizable text through
   YML files.
 
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
 exclude:
   - /*.gem
   - /*.gemspec
