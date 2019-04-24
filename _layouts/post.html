@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-<div class="post-header">
+<div class="page-header">
   <h2>{{ page.title }}</h2>
     {%- assign date_format = "%b %-d, %Y" -%}
     {{ page.date | date: date_format }}
 </div>
-<div class="post-content">
+<div class="page-content">
   {{ content }}
 </div>
