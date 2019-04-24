@@ -27,6 +27,10 @@ h6 {
   font-size: 0.75em;
 }
 
+p {
+  padding: 10px 0 10px 0;
+}
+
 a.text-link:link {
   color: #ffffff;
 }
@@ -86,8 +90,8 @@ table {
 }
 
 img {
-  margin: 0;
   max-width: 100%;
+  padding: 10px 0 10px 0;
 }
 
 .left {
@@ -119,5 +123,9 @@ img {
 }
 
 .full {
+  display: block;
+  float: none;
+  margin-left:auto;
+  margin-right:auto;
   width: 100%;
 }
