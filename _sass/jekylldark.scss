@@ -40,7 +40,10 @@ $base-text-color: #ffffff !default;
 @import
   "components/elementstyle",
   "components/footer",
+  "components/form",
+  "components/gist",
   "components/layout",
   "components/navbar",
-  "components/sidebar"
+  "components/sidebar",
+  "components/table"
 ;
