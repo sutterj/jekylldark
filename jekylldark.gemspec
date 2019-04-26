@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekylldark"
-  spec.version       = "0.1.20"
+  spec.version       = "0.2.0"
   spec.authors       = ["sutterj"]
   spec.email         = ["sutterj@allegheny.edu"]
 
-  spec.summary       = "A dark theme for Jekyll.  UNFINISHED: IN DEVELOPMENT"
+  spec.summary       = "A dark theme for Jekyll with a responsive layout, navbar, content area, sidebar, footer, and styling for major HTML elements."
   spec.homepage      = "https://github.com/sutterj/jekylldark"
   spec.license       = "GPL-3.0-or-later"
 
