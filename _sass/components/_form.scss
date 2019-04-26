@@ -1,0 +1,34 @@
+form {
+  background-color: #4c4c4c;
+  padding: 20px;
+}
+
+fieldset {
+  margin: 0 0 10px 0;
+  border-color: #000000;
+}
+
+textarea {
+  font-size: 1em;
+  height: 200px;
+  width: 100%
+}
+
+input[type=text], input[type=email] {
+  font-size: 1em;
+}
+
+input[type=checkbox] {
+  margin-left: 10px;
+}
+
+input[type=submit] {
+  background-color: #dddddd;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 10px 0 0 0;
+  width: 100%
+}
