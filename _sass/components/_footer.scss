@@ -50,20 +50,12 @@ footer {
   padding: 0 5px 0 0;
 }
 
-a.footer-link:link {
+a.footer-link:link, a.footer-link:visited {
   color: #bababa;
   text-decoration: none;
 }
 
-a.footer-link:hover {
-  color: #ffffff;
-}
-
-a.footer-link:visited {
-  color: #bababa;
-}
-
-a.footer-link:visited:hover {
+a.footer-link:hover, a.footer-link:visited:hover {
   color: #ffffff;
 }
 
