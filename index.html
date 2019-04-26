@@ -3,53 +3,55 @@ title: jekylldark
 layout: page
 ---
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et mi
-fermentum, efficitur dui id, mattis eros. Mauris sit amet elit tellus. Sed
-commodo massa non dolor egestas blandit. Vivamus sit amet leo consectetur,
-ornare dolor at, ullamcorper lorem. Sed in nisi fermentum, molestie ligula sit
-amet, pretium diam. Nam eu purus ut ex vehicula sodales vel at turpis. In
-ultricies nisl mi, molestie faucibus urna hendrerit at. Etiam eget condimentum
-est.
+  jekylldark is a Jekyll theme with a dark color scheme.  It features a
+  responsive layout with customizable navbar, sidebar, content area, and footer
+  using HTML, Markdown, and Liquid.  It is important to note that while there is
+  templating for all of these site areas, it is not necesary to use them all.
+  By leaving out a config file, it is possible to eliminate an element from the
+  site.
 </p>
 <p>
-Nunc feugiat suscipit elit, et maximus est tincidunt a. Aliquam metus diam,
-pulvinar eget urna faucibus, aliquet laoreet purus. Sed vehicula lectus vel
-viverra auctor. Nam viverra, dui quis pretium euismod, sem ante placerat enim, a
-iaculis dui justo vitae sem. Aenean vel nisl libero. Suspendisse potenti. Morbi
-ut erat ipsum.
+  In order for the site to work properlly, it will be necessary to create a few
+  files and folders.  To start, make sure that your <code>_config.yml</code>
+  file has the title and the url of your site.  Then, you will want to add a
+  <code>title-description</code>.  This is the desciption that will appear under
+  the title of the site in the sidebar.  You can additionally add a
+  <code>full-desciption</code> that will appear in the footer of the site where
+  there is more room.  The <code>&gt</code> means to ignore line breaks until
+  the next item.  It is important to note where <code>-</code>'s are used as
+  these matter when creating lists.
+</p>
+<script src="https://gist.github.com/sutterj/f7c47e90d812d2a381966b5378c153a6.js"></script>
+<p>
+  Next, create a folder in the root of the site called <code>_data</code>.  This
+  is where we will create the files, <code>footer.yml</code>,
+  <code>navigation.yml</code>, and <code>sidebar.yml</code>.  Here is what the
+  files that populate this site look like.
+</p>
+<script src="https://gist.github.com/sutterj/4ff72c0a2e13e32892eb3b84a93514bc.js"></script>
+<p>
+  By using some key words in each of these files, specifically styled content
+  areas are created.  In the footer, adding <code>header: Title</code> will add
+  the title and the full description of the site and adding <code>header:
+  Connect</code> will create an area for social links and icons. The icons come
+  from <a class="text-lint" href="https://fontawesome.com">Font Awesome</a> and
+  are retrieved from their CDN by adding <code>image: NAMEOFICON</code>.  In
+  almost all cases the name of the icon is an all lowercase, no spaces version
+  of the name of the site so there should be no need to look it up.
+</p>
+<script src="https://gist.github.com/sutterj/7945547b774da837b03e775c776ecad2.js"></script>
+<p>
+  The navbar can be filled out with main navigation locations and with dropdown
+  lists.  The way that this is done can be seen in the above gist.
+</p>
+<script src="https://gist.github.com/sutterj/d975e51ba96edc722383aa55f209982c.js"></script>
+<p>
+  The sidebar of the site has special areas for projects and posts.  These are
+  created with <code>header: Featured Projects</code> and <code>header:
+  posts</code>.
 </p>
 <p>
-Aenean pharetra risus in metus laoreet bibendum. Aliquam viverra tempus mauris
-id cursus. Maecenas posuere porttitor diam, quis semper metus molestie ut.
-Mauris accumsan orci purus, a interdum mi tempor at. Sed sit amet sodales est.
-Aliquam augue orci, tincidunt non sapien nec, gravida lacinia ex. Aenean
-sagittis enim a maximus sagittis. Duis tincidunt consequat nunc, eget elementum
-nisl. Quisque commodo sapien eget libero fringilla, quis hendrerit arcu mattis.
-Nam augue dolor, dignissim in justo at, sodales iaculis enim. Vivamus at lectus
-molestie, ultricies libero vitae, facilisis lorem. Ut convallis ultrices eros,
-nec scelerisque est interdum nec. Proin dapibus, mauris sed pharetra auctor,
-quam eros accumsan felis, eget aliquet est enim sit amet felis. Quisque finibus
-sem tempus purus fermentum tempus. Vestibulum orci lacus, auctor a odio id,
-porttitor vestibulum justo.
-</p>
-<p>
-Nam ut augue vitae leo bibendum dignissim eget a metus. Integer ultricies
-laoreet consectetur. Etiam in diam mollis orci vulputate finibus. Ut gravida
-arcu in ipsum cursus, ut dignissim mauris efficitur. Nulla imperdiet vitae risus
-at consectetur. Vestibulum laoreet velit nulla, nec molestie velit placerat in.
-Nunc eleifend massa cursus feugiat rutrum. Duis mi turpis, gravida vel rutrum
-lobortis, iaculis eu nunc. Aliquam non est ut nunc suscipit ultricies. Lorem
-ipsum dolor sit amet, consectetur adipiscing elit. Etiam at interdum est, id
-porttitor nulla.
-</p>
-<p>
-Aliquam tincidunt justo quam, nec vehicula ipsum tincidunt vitae. Suspendisse
-ultrices ipsum in porttitor fermentum. Maecenas faucibus ultricies consequat.
-Curabitur ut pharetra tortor, quis blandit arcu. Aliquam eu rutrum elit, vel
-vestibulum enim. Suspendisse blandit risus at quam hendrerit fermentum. Nunc
-malesuada sapien eget velit hendrerit, nec tempor magna tempus. Aliquam nec
-varius magna. Duis eu urna metus. Aliquam pellentesque nisi at augue viverra,
-sit amet maximus libero tempor. Mauris egestas eget ante id molestie. Donec non
-placerat nisl. Aliquam vel augue malesuada, sodales dui quis, tempus ex. Nulla
-eros nisi, aliquet at nulla porta, imperdiet feugiat ex.
+  Information on creating posts can be found on the <a class="text-link"
+  href="/posts/">posts</a> page and examples of the different styled elements
+  can be found on the <a class="text-link" href="/examples/">examples</a> page.
 </p>

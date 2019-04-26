@@ -1,0 +1,30 @@
+---
+layout: page
+permalink: /contact/
+title: Contact
+---
+<p>
+  This is an example contact form.  You can connect to the form server of your
+  choice.  Here, <a class="text-link" href="https://formspree.io">Formspree</a>
+  is used and the email necessary to connect to the form is pulled from the
+  <code>_config.yml</code> file.
+</p>
+<form action="https://formspree.io/{{ site.email }}" method="POST">
+  <fieldset>
+    <legend>Personal Information</legend>
+    <label>First Name</label> <input type="text" name="first_name"><br>
+    <label>Last Name</label> <input type="text" name="last_name"><br>
+    <label>Email</label> <input type="email" name="_replyto">
+  </fieldset>
+  <fieldset>
+    <legend>Contact</legend>
+    <label>Reason</label><br>
+      <input type="checkbox" name="reason" value="Issue"> Issue<br>
+      <input type="checkbox" name="reason" value="Question"> Question<br>
+      <input type="checkbox" name="reason" value="Other"> Other<br>
+    <label>Please specify if other: </label><input type="text" name="other"><br>
+    <label>Message</label><br>
+      <textarea name="message"></textarea>
+  </fieldset>
+  <input type="submit" value="Send">
+</form>

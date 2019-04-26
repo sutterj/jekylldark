@@ -50,30 +50,22 @@ footer {
   padding: 0 5px 0 0;
 }
 
-a.footer-link:link {
+a.footer-link:link, a.footer-link:visited {
   color: #bababa;
   text-decoration: none;
 }
 
-a.footer-link:hover {
-  color: #ffffff;
-}
-
-a.footer-link:visited {
-  color: #bababa;
-}
-
-a.footer-link:visited:hover {
+a.footer-link:hover, a.footer-link:visited:hover {
   color: #ffffff;
 }
 
 .connect-img {
   margin: 5px 5px 5px 5px;
-  vertical-align: middle;
   width: 20px;
 }
 
 .footer-paragraph {
   font-size: 0.75em;
+  padding: 0;
   width: 150px;
 }

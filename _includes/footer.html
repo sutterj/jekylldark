@@ -12,7 +12,7 @@
             <ul class="footer-list">
               {%- for connect in footeritem.social -%}
                 <li>
-                  <img class="connect-img" src="{{ connect.image }}" alt="{{ connect.title }} icon"><a class="footer-link" href="{{ connect.url }}">{{ connect.title }}</a>
+                  <i class="connect-img fab fa-{{ connect.image }}"></i><a class="footer-link" href="{{ connect.url }}">{{ connect.title }}</a>
                 </li>
               {%- endfor -%}
             </ul>

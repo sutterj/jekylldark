@@ -4,10 +4,10 @@
     "font-sizes"
   ],
   "warnings": [
+    "box-model",
     "important"
   ],
   "errors": [
-    "box-model",
     "box-sizing",
     "bulletproof-font-face",
     "compatible-vendor-prefixes",

@@ -1,0 +1,70 @@
+table {
+  border-collapse: collapse;
+  border-color: #000000;
+  border-style: solid;
+  border-width: 4px;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  tr, th, td {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+  }
+  th {
+    border-width: 4px;
+  }
+  tr:nth-child(odd) td {
+    background-color: #4c4c4c;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  table {
+    max-height: 500px;
+  }
+
+  table, thead, tbody, th, td, tr {
+    border-style: none;
+  	display: block;
+  }
+
+  thead tr, caption {
+    left: -9999px;
+  	position: absolute;
+  	top: -9999px;
+  }
+
+  td {
+    padding-left: 49%;
+  	position: relative;
+  	text-align: left;
+    white-space: normal;
+  }
+
+  td:before {
+    font-weight: bold;
+  	left: 5px;
+    padding-right: 10px;
+    position: absolute;
+    text-align:left;
+  	white-space: nowrap;
+    width: 50%;
+  }
+
+  td:before {
+    content: attr(data-title);
+  }
+}
+
+caption {
+  border-color: #000000;
+  border-style: solid;
+  border-width: 4px;
+  padding: 1px 5px 1px 5px;
+}
+
+.scroll {
+  background-color: #333333;
+  overflow-y: scroll;
+}
