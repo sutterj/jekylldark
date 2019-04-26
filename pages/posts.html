@@ -4,6 +4,15 @@ permalink: /posts/
 title: Posts
 ---
 {%- assign date_format = "%b %-d, %Y" -%}
+<p>
+  This is a page to display all of your posts.  The posts can be created by
+  either adding Markdown or HTML files to the <code>_posts</code> folder with
+  the format of <code>YYYY-MM-DD-YOURTITLE.html</code> or
+  <code>YYYY-MM-DD-YOURTITLE.md</code>.  Be sure to include frontmatter in the
+  post file that contains the layout and title.
+</p>
+<script src="https://gist.github.com/sutterj/222767c9308fb567cfe441e596bdfef1.js"></script>
+<br>
 <ul class="sidebar-list">
   {%- for post in site.posts -%}
     <li>
