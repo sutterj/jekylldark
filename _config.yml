@@ -14,6 +14,10 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+# Include in processing
+include:
+  - _redirects
+
 # Exclude from processing
 exclude:
   - /*.gem
