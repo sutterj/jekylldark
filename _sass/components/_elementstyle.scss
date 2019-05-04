@@ -69,11 +69,11 @@ figcaption {
   margin: 0 0 10px 0;
 }
 
-a.text-link:link, a.text-link:visited {
+a:link, a:visited {
   color: #ffffff;
 }
 
-a.text-link:hover, a.text-link:visited:hover {
+a:hover, a:visited:hover {
   color: #000000;
 }
 
@@ -104,12 +104,39 @@ img {
   width: 200px;
 }
 
+@media screen and (max-width: 500px) {
+  .small {
+    display: block;
+    float: none;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+
 .medium {
   width: 350px;
 }
 
+@media screen and (max-width: 950px) {
+  .medium {
+    display: block;
+    float: none;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+
 .large {
   width: 500px;
+}
+
+@media screen and (max-width: 1110px) {
+  .large {
+    display: block;
+    float: none;
+    margin-left:auto;
+    margin-right:auto;
+  }
 }
 
 .full {
