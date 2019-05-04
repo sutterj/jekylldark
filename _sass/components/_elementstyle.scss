@@ -69,11 +69,11 @@ figcaption {
   margin: 0 0 10px 0;
 }
 
-a.text-link:link, a.text-link:visited {
+a:link, a:visited {
   color: #ffffff;
 }
 
-a.text-link:hover, a.text-link:visited:hover {
+a:hover, a:visited:hover {
   color: #000000;
 }
 
