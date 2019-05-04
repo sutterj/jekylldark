@@ -31,7 +31,10 @@ Or install it yourself as:
 
 ## Usage
 
-Features:
+A site demonstrating how to use the theme is available
+[here](https://jekylldark.jacobsutter.com).
+
+### Features
 
 - Responsive layout
 - Navbar with subnav dropdown
