@@ -35,7 +35,9 @@ Features:
 
 - Responsive layout
 - Navbar with subnav dropdown
-- Sidebar featuring title description, projects, posts, and any other text content
+- Content area with styled HTML elements
+- Sidebar featuring title, description, projects, posts, and other text content
+- Footer featuring title, description, connect links with icons, and other text content
 
 ## Contributing
 
