@@ -2,6 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/jekylldark.svg)](https://badge.fury.io/rb/jekylldark)
 [![Build Status](https://travis-ci.com/sutterj/jekylldark.svg?branch=master)](https://travis-ci.com/sutterj/jekylldark)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/65e8f6b0-5551-415e-9392-ea4494e1ad67/deploy-status)](https://app.netlify.com/sites/jekylldark/deploys)
 
 ## Installation
 
