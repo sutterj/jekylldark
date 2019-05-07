@@ -7,6 +7,7 @@ full-description: >
   area, and posts with customizable text through
   YML files.
 email: jesutter23@me.com
+url: https://jekylldark.jacobsutter.com
 
 # Build settings
 markdown: kramdown
