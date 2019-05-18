@@ -8,6 +8,7 @@ full-description: >
   YML files.
 email: jesutter23@me.com
 url: https://jekylldark.jacobsutter.com
+google-analytics: UA-138245538-2
 
 # Build settings
 markdown: kramdown
