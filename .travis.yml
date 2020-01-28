@@ -15,7 +15,7 @@ script:
   - mdl _posts
   - proselint README.md
   - proselint _posts
-  - jekyll build
+  - JEKYLL_ENV=production jekyll build
   - htmlproofer --http-status-ignore "999" ./_site
   - htmlhint ./_site
   - csslint ./_site
