@@ -4,6 +4,7 @@ rvm:
 before_install:
   - gem update --system
   - gem install bundler
+  - pyenv install 3.6.3
   - pyenv global 3.6.3
   - pip install --upgrade pip
 install:
@@ -15,7 +16,7 @@ script:
   - mdl _posts
   - proselint README.md
   - proselint _posts
-  - jekyll build
+  - JEKYLL_ENV=production jekyll build
   - htmlproofer --http-status-ignore "999" ./_site
   - htmlhint ./_site
   - csslint ./_site
@@ -27,7 +28,9 @@ addons:
     packages:
       - libcurl4-openssl-dev
 sudo: false
-cache: bundler
+cache:
+  - npm
+  - bundler
 notifications:
   email: false
 deploy:
