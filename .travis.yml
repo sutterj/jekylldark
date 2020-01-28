@@ -3,7 +3,8 @@ rvm:
   - 2.6.2
 before_install:
   - gem update --system
-  - gem install bundler
+  - gem install
+  - pyenv install 3.6.3
   - pyenv global 3.6.3
   - pip install --upgrade pip
 install:
@@ -27,7 +28,9 @@ addons:
     packages:
       - libcurl4-openssl-dev
 sudo: false
-cache: bundler
+cache:
+  - npm
+  - bundler
 notifications:
   email: false
 deploy:
