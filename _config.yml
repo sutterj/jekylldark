@@ -24,9 +24,11 @@ include:
 exclude:
   - /*.gem
   - /*.gemspec
+  - .sass-cache/
+  - .jekyll-cache/
   - Gemfile
   - Gemfile.lock
-  - node_modules
+  - node_modules/
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
